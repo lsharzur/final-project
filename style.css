@@ -42,6 +42,58 @@ nav ul li a:hover{
   transition: 0.4s;
 }
 
+/* Basic styling for the jumbotron */
+.jumbotron {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust the height as needed */
+}
+
+/* Styling for the jumbotron image */
+.jumbotron img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Styling for the jumbotron content */
+.jumbotron-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+/* Styling for the headline */
+.jumbotron-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the paragraph */
+.jumbotron-content p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* Styling for the button */
+.jumbotron-content .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+
+
+
 .logo {
   display: inline-block;
   color: white;
