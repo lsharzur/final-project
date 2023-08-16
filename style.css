@@ -204,6 +204,11 @@ p {
   min-height: 300px; /* Adjust as needed */
 }
 
+h2 {
+  text-align: center;
+  padding: 50px;
+}
+
 /* Style the carousel indicators */
 .carousel-indicators {
   bottom: 10px;
