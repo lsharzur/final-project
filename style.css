@@ -11,7 +11,7 @@ span{
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 
 /* to change the background color */
@@ -22,7 +22,7 @@ body{
   min-height: 100vh;
 }
 .navbar {
-  display: flex;
+  display:flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
@@ -34,65 +34,12 @@ body{
   left: 0;
   width: 100%;
   z-index: 100;
-  
 }
 
 nav ul li a:hover{
   color: #2B5F59;
   transition: 0.4s;
 }
-
-/* Basic styling for the jumbotron */
-.jumbotron {
-  position: relative;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; /* Adjust the height as needed */
-}
-
-/* Styling for the jumbotron image */
-.jumbotron img {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-/* Styling for the jumbotron content */
-.jumbotron-content {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-}
-
-/* Styling for the headline */
-.jumbotron-content h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-/* Styling for the paragraph */
-.jumbotron-content p {
-  font-size: 18px;
-  margin-bottom: 40px;
-}
-
-/* Styling for the button */
-.jumbotron-content .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 18px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-
-
 
 .logo {
   display: inline-block;
@@ -136,7 +83,6 @@ nav ul li a:hover{
   display: block;
   filter: contrast(60%);
   filter: brightness(50%);
-
 }
 
 .hero-text {
@@ -248,6 +194,48 @@ p {
   font-weight: bold;
 }
 
+/* Custom styles for the Bootstrap carousel */
+
+/* Center the carousel vertically */
+#myCarousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px; /* Adjust as needed */
+}
+
+/* Style the carousel indicators */
+.carousel-indicators {
+  bottom: 10px;
+}
+
+/* Style the carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  background-color: rgb(154, 138, 138);
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+}
+
+.carousel-inner .carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hide default Bootstrap outline on focused elements */
+.carousel-control-prev:focus,
+.carousel-control-next:focus,
+.carousel-indicators:focus {
+  outline: none;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
 
 .social{
   display: flex;
