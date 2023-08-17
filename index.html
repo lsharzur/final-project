@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NangLa</title>
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="https://kit.fontawesome.com/8dbc423d4f.css" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8dbc423d4f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 <body>
     <section id="home">
     <header>    
         <div class="navbar">
             <div class="logo"><img src="/images/logo.png" alt="">
-            
-            </div>
-
+        </div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -25,13 +28,15 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <div class="hero-container">
-            <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Hero Image">
-            <div class="hero-text">
-                <h1>Welcome to Nang La!</h1>
-                <h2>Indulge in the Heartwarming Flavors of Tibetan Cuisine <br> Where Every Bite Tastes Like Home!</p>
-            </div>
-        </div>
+
+        <section class="parallax-container">
+            <h1>Welcome to Nang La!</h1>
+            <p>
+                Indulge in the Heartwarming Flavors of Tibetan Cuisine <br> Where Every Bite Tastes Like Home!
+            </p>
+          </section>
+      
+          <section class="buffer"></section>
         </section>
         
         <!-- <div class="image-section"></div> -->
@@ -68,7 +73,7 @@
         </div>
         <div class="menu-item">
             <a href="https://youtu.be/Ksx8xy1_Nd8">
-                <img src="images/then-thuk.png" alt="Then-thuk">
+                <img src="/images/then-thuk.png" alt="Then-thuk">
             </a>
             <div class="item-details">
                 <h2>Then-thuk</h2>
@@ -78,10 +83,62 @@
         </div>
     </section>
 
-    <footer>
-        <section id="contact" class="contact-section">
-        <section class="contact">
+    <div class="container">
+        <h2>A Sneak Peek into the Heart of our Cuisine</h2>  
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+      
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/tibet1.jpg" alt="Image 1">
+            <div class="carousel-caption">
+                <h3>Drekong Monastery</h3>
+                <p>A majestic view of Tibet from above Drekong Monastery</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/tibet2.jpg" alt="Image 2">
+            <div class="carousel-caption">
+                <h3>Snow Capped Mountains</h3>
+                <p>A serene and enchanting landscape reveals the majestic allure of Tibetan snowy mountains</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/tibet3.jpg" alt="Image 3">
+            <div class="carousel-caption">
+                <h3>Yak along the Namtso Lake</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/tibet4.jpg" alt="Image 4">
+            <div class="carousel-caption">
+                <h3>Potala Palace</h3>
+                <p>The Potala Palace is known to symbolize the cultural, religious, and historical identity of Tibet. </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Controls -->
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
 
+    <footer>
+        <section class="contact">
+            <section id="contact" class="contact-section">
                 <h4><span>Khalee peh (take care)! </span><br> <i class="fa-regular fa-hand-peace" style="color: #3482c5;"></i><br>Contact Us:</h4>
                 <div class="container1">
                     <form action="/action_page.php">
@@ -102,13 +159,23 @@
                 </div>
                 <div class="social-links">
                     <a href="https://m.facebook.com"><i class="fa-brands fa-facebook fa-2x" style="color: #3b86c7;"></i></a>
-                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2x" style="color: #86b5dc;"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2x" style="color: #82532acf;"></i></a>
+                    <a href="https://www.youtube.com"><i class="fa-brands fa-youtube fa-2x" style="color: #ba0909;"></i></a>
+                    <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok fa-2x" style="color: #222921;"></i></a>
                 </div>
                 <div class="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d538497.8132392068!2d90.82029467819737!3d29.691383055483282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3761317244846eab%3A0x4ae80d857ec10c19!2sPotala%20Palace!5e0!3m2!1sen!2sus!4v1691384594192!5m2!1sen!2sus" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="copyright"><p>&copy; Lhamo Sharzur <br> Credit to LogoMakr.com for Logo</p></div>
             </section>
+            <div class="thumbnail-container">
+                <a href="fullsize-image1.jpg">
+                    <img src="images/logo.png" alt="Thumbnail 1">
+            </div>
         </section>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
 </body>
 </html>
