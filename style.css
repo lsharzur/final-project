@@ -21,9 +21,9 @@ body{
   min-height: 100vh;
 }
 
-.navbar {
+.fixed-top {
   display:flex;
-  justify-content:space-around;
+  justify-content:space-between;
   align-items: center;
   background-color: #ffffff;
   padding: 3px 20px;
@@ -36,17 +36,18 @@ body{
   z-index: 100;
 }
 
-.navbar li {
+.fixed-top li1 {
   margin-right: 20px;
+  padding: 20px;
 }
 
-.navbar li a:hover {
+.fixed-top li1 a:hover {
   font-size: 110%; 
   transform: scale(1.1); 
   transition: font-size 0.3s, transform 0.3s; 
 }
 
-.navbar li a {
+.fixed-top li1 a {
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
@@ -57,27 +58,26 @@ body{
   font-size: 24px;
 }
 
-/* to change logo size */
-.logo img{
+.logo img {
   width: 150px;
   height: auto;
 }
 
-.navbar ul {
+.fixed-top ul {
   list-style-type: none;
   display: flex;
 }
 
-.navbar li {
-  margin-right: 40px;
+.fixed-top li {
+  margin-right: 20px;
 }
 
-.navbar li:last-child {
+.fixed-top li:last-child {
   margin-right: 0;
 }
 
 /* to change color of nav font */
-.navbar li a {
+.fixed-top li a {
   color: rgb(100, 44, 44);
   text-decoration:none;
 }
@@ -113,7 +113,6 @@ body{
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
-
 .hero-container {
   position: relative;
   overflow: hidden;
@@ -145,19 +144,6 @@ body{
   font-size: 18px;
 }
 
-
-/* style for the image section */
-/* .image-section {
-  width: 100%;
-  height: 100vh;
-  padding: 10px;
-  background-image: url('https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80');
-  background-size: auto;
-  background-position: center;
-  border-radius: 2rem;    
-} */
-
-/* About Section */
 .about-section {
   text-align: center;
   padding: 50px;
@@ -201,21 +187,20 @@ p {
   align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/5204945/pexels-photo-5204945.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover no-repeat;
     color: white; 
-    
 }
 
 .menu-item {
   display: flex;
-  flex-direction: column; /* Stack the image and details vertically */
-  align-items: center; /* Center-align items horizontally */
+  flex-direction: column;
+  align-items: center;
   margin: 30px 0;
-  text-align: center; /* Center-align menu item words */
+  text-align: center;
 }
 
 .menu-item img {
   max-width: 500px;
   height: auto;
-  margin-bottom: 10px; /* Add a small margin below the image */
+  margin-bottom: 5px;
 }
 
 .item-details {
@@ -224,26 +209,26 @@ p {
 
 .item-details h2 {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .item-details p {
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .price {
   font-weight: bold;
 }
-/* Carousel */
 
+/* Carousel */
 .carousel-caption {
   position: absolute;
-  top: 50%; /* Position at vertical center */
-  left: 50%; /* Position at horizontal center */
+  top: 50%;
+  left: 50%;
   color: white;
   font-size: 16px;
-  opacity: 0; /* Start with text hidden */
+  opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -252,8 +237,9 @@ h2 {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 .carousel-item:hover .carousel-caption {
-  opacity: 1; /* Show text on hover */
+  opacity: 1;
 }
 
 .carousel-inner img {
@@ -265,7 +251,7 @@ h2 {
 }
 
 .carousel-item:hover img {
-  filter: brightness(70%); /* Darken the image on hover */
+  filter: brightness(70%); 
 }
 
 .carousel-control-prev,
@@ -276,7 +262,7 @@ h2 {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5); /* Customize background color */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .social{
@@ -288,7 +274,6 @@ h2 {
   height: 45px;
   border-radius: 50%;
   margin: 22px 10px;
-
 }
 
 .social a:hover{
@@ -325,7 +310,6 @@ h2 {
 }
 
 /* CONTACT PAGE */
-
 .contact{
   padding-bottom: 10%;
   background-color: whitesmoke;
